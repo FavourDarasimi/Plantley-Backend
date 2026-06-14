@@ -47,7 +47,7 @@ setuptools==82.0.1
 shellingham==1.5.4
 six==1.17.0
 sqlparse==0.5.5
-tensorflow_cpu==2.21.0
+tensorflow-cpu==2.21.0
 termcolor==3.3.0
 tqdm==4.68.2
 typer==0.25.1

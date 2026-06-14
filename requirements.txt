@@ -1,49 +1,13 @@
-Model loaded! Classes: ['Tomato_Leaf_Mold', 'Tomato_healthy']
-
-Type 'manage.py help <subcommand>' for help on a specific subcommand.
-
-Available subcommands:
-
-[auth]
-    changepassword
-    createsuperuser
-
-[contenttypes]
-    remove_stale_contenttypes
-
-[django]
-    check
-    compilemessages
-    createcachetable
-    dbshell
-    diffsettings
-    dumpdata
-    flush
-    inspectdb
-    loaddata
-    makemessages
-    makemigrations
-    migrate
-    optimizemigration
-    sendtestemail
-    shell
-    showmigrations
-    sqlflush
-    sqlmigrate
-    sqlsequencereset
-    squashmigrations
-    startapp
-    startproject
-    test
-    testserver
-
-[rest_framework]
-    generateschema
-
-[sessions]
-    clearsessions
-
-[staticfiles]
-    collectstatic
-    findstatic
-    runserver
+asgiref==3.11.1
+Django==6.0.6
+django-cors-headers==4.9.0
+django-environ==0.13.0
+djangorestframework==3.17.1
+gunicorn==26.0.0
+huggingface_hub==1.19.0
+keras==3.14.1
+numpy==2.4.6
+Pillow==12.2.0
+psycopg2-binary==2.9.12
+tensorflow-cpu==2.21.0
+whitenoise==6.12.0

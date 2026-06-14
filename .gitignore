@@ -4,6 +4,8 @@ __pycache__/
 *$py.class
 
 # Virtual environment
+venv/
+.venv/
 task/
 
 # Django migrations (optional — keep if sharing DB structure)

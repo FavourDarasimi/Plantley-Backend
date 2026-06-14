@@ -24,6 +24,14 @@ class PredictView(APIView):
                 {"error": "No image provided"}, status=status.HTTP_400_BAD_REQUEST
             )
 
+            # File size limit — 2MB max
+        max_size = 2 * 1024 * 1024  # 2MB in bytes
+        if file.size > max_size:
+            return Response(
+                {"error": "Image too large. Maximum size is 2MB"},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+
         img = Image.open(BytesIO(file.read())).convert("RGB")
         img = img.resize((256, 256))
         img_array = np.expand_dims(np.array(img), 0)

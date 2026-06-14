@@ -8,7 +8,7 @@ services:
     volumes:
       - .:/app
       - static_volume:/app/staticfiles
-    command: gunicorn core.wsgi:application --bind 0.0.0.0:8000 --workers 4
+    command: gunicorn core.wsgi:application --bind 0.0.0.0:8000 --workers 1 --timeout 300 --graceful-timeout 300
 
 volumes:
   static_volume:

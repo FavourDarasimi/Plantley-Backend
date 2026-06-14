@@ -61,3 +61,5 @@ dump.rdb
 .env
 
 .vscode
+
+models/

@@ -3,6 +3,7 @@ from io import BytesIO
 import numpy as np
 from PIL import Image
 from rest_framework import status
+from rest_framework.decorators import api_view
 from rest_framework.parsers import MultiPartParser
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -32,3 +33,8 @@ class PredictView(APIView):
         confidence = round(float(np.max(predictions[0])) * 100, 2)
 
         return Response({"predicted_class": predicted_class, "confidence": confidence})
+
+
+@api_view(["GET"])
+def health_check(request):
+    return Response({"status": "ok"})
